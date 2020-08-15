@@ -1,0 +1,20 @@
+.zenrock {
+  position: absolute;
+  top: 15vh;
+  z-index: 1;
+}
+.description {
+  position: absolute;
+  width: 45vw;
+  left: 50vw;
+  top: 15vh;
+  h1 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    padding-top: 5vh;
+    font-weight: normal;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+  }
+}

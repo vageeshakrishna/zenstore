@@ -1,22 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 .landing-body {
-  font-family: "Montserrat", sans-serif;
-  height: 100vh;
   overflow: hidden;
 }
 
 .landing-body::after {
   position: absolute;
   content: url("../Assets/Group 8.svg");
-  margin-top: -40vh;
-  height: 20vh;
+  height: 10vh;
   bottom: 20%;
+  z-index: -1;
 }
 
 header {
@@ -152,5 +144,44 @@ section .button:hover::before {
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
   width: 100%;
+}
+
+.zenrock {
+  position: absolute;
+  top: 15vh;
+  z-index: 1;
+}
+
+.description {
+  position: absolute;
+  width: 45vw;
+  left: 50vw;
+  top: 15vh;
+}
+
+.description h1 {
+  font-size: 2.5rem;
+}
+
+.description h3 {
+  padding-top: 5vh;
+  font-weight: normal;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }
 /*# sourceMappingURL=Styles.css.map */
