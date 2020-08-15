@@ -10,4 +10,103 @@
   box-sizing: border-box;
 }
 
-@import "Landing-page";
+.landing-body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  &::after {
+    position: absolute;
+    content: url("../Assets/Group 8.svg");
+    margin-top: -40vh;
+    height: 20vh;
+    bottom: 20%;
+  }
+}
+
+// navigation bar
+
+header {
+  height: 15vh;
+  width: 100%;
+  nav {
+    @include flex();
+    height: 100%;
+    padding: 0 10vw;
+    .logo {
+      @include flex();
+      justify-content: flex-start;
+      flex: 2;
+      img {
+        height: 6vh;
+      }
+      h3 {
+        margin-left: 1vw;
+        font-weight: 600;
+      }
+    }
+    .nav-links {
+      @include flex();
+      flex: 1;
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+}
+
+// Main Section
+
+.container {
+  padding: 0 10vw;
+}
+section {
+  position: relative;
+  height: 90vh;
+  .landing {
+    height: 60vh;
+    @include flex();
+    justify-content: space-between;
+    h1 {
+      font-size: 2.5rem;
+    }
+    img {
+      margin-top: 10vh;
+    }
+  }
+  .button {
+    position: absolute;
+    bottom: 35vh;
+    padding: 3vh 5vw;
+    z-index: 1;
+    border: 0.2em solid #ff815e;
+    border-radius: 0.4rem;
+    margin-left: 7vw;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    background: none;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -1%;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      transform: translate(8vw, 0%) skew(-45deg);
+      opacity: 1;
+      height: 9.5vh;
+      background-color: #ff815e;
+      transition: 0.8s ease-in-out;
+      z-index: -1;
+    }
+    &:hover::before {
+      z-index: -1;
+      transform: translate(0%, 0%);
+      // opacity: 1;
+      width: 100%;
+    }
+  }
+}

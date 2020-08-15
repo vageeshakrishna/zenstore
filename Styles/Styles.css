@@ -5,13 +5,13 @@
           box-sizing: border-box;
 }
 
-body {
+.landing-body {
   font-family: "Montserrat", sans-serif;
   height: 100vh;
   overflow: hidden;
 }
 
-body::after {
+.landing-body::after {
   position: absolute;
   content: url("../Assets/Group 8.svg");
   margin-top: -40vh;
@@ -60,6 +60,7 @@ header nav .logo img {
 
 header nav .logo h3 {
   margin-left: 1vw;
+  font-weight: 600;
 }
 
 header nav .nav-links {
