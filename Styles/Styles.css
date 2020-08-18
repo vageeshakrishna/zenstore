@@ -146,6 +146,11 @@ section .button:hover::before {
   width: 100%;
 }
 
+#btn-cta {
+  position: absolute;
+  right: 45vw;
+}
+
 .zenrock {
   position: absolute;
   height: 35vh;
@@ -169,6 +174,83 @@ section .button:hover::before {
   font-weight: normal;
   line-height: 1.6rem;
   text-transform: uppercase;
+}
+
+.form-login {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.form-input {
+  height: 100vh;
+}
+
+.name-section {
+  overflow: hidden;
+  position: relative;
+  margin-top: 10vh;
+}
+
+.name-section input {
+  height: 10vh;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  padding-top: 6vh;
+}
+
+.name-section input:focus ~ label span,
+.name-section input:valid ~ label span {
+  -webkit-transform: translateY(-2vh);
+          transform: translateY(-2vh);
+  font-size: 14px;
+  color: #457b9d;
+}
+
+.name-section input:focus ~ label::after,
+.name-section input:valid ~ label::after {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+.name-section label {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  bottom: 0;
+}
+
+.name-section label::after {
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #457b9d;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.name-section span {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  bottom: 1vh;
+}
+
+#btn-cta {
+  position: absolute;
+  right: 45vw;
 }
 
 * {
