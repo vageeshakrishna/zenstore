@@ -258,6 +258,94 @@ section .button:hover::before {
   bottom: 30vh;
 }
 
+.form-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 1fr 1fr 10%;
+      grid-template-columns: 10% 1fr 1fr 10%;
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  font-size: 0.8rem;
+  height: 70vh;
+}
+
+.form-section * {
+  width: 80%;
+  margin: 1vh auto;
+  background: transparent;
+}
+
+.form-section #fname {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.form-section #lname {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.form-section #email {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.form-section #phno {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.form-section #pass {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+.form-section #confirm-pass {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+#zenup,
+#btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-items: center;
+}
+
+#btn {
+  position: absolute;
+  padding: 2vh 5vw;
+  font-size: 0.8rem;
+  bottom: 15vh;
+  right: 50vw;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+}
+
 * {
   margin: 0;
   padding: 0;

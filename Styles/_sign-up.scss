@@ -1,0 +1,47 @@
+.form-section {
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  grid-template-rows: repeat(5, 1fr);
+  font-size: 0.8rem;
+  height: 70vh;
+  * {
+    width: 80%;
+    margin: 1vh auto;
+    background: transparent;
+  }
+  #fname {
+    grid-column: 2/3;
+  }
+  #lname {
+    grid-column: 3/4;
+  }
+  #email {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  #phno {
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+  #pass {
+    grid-row: 3/4;
+    grid-column: 2/4;
+  }
+  #confirm-pass {
+    grid-row: 4/5;
+    grid-column: 2/4;
+  }
+}
+#zenup,
+#btn {
+  @include flex();
+  justify-items: center;
+}
+#btn {
+  position: absolute;
+  padding: 2vh 5vw;
+  font-size: 0.8rem;
+  bottom: 15vh;
+  right: 50vw;
+  transform: translate(50%);
+}
