@@ -323,8 +323,7 @@ section .button:hover::before {
   grid-column: 2/4;
 }
 
-#zenup,
-#btn {
+#zenup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
