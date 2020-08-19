@@ -146,11 +146,6 @@ section .button:hover::before {
   width: 100%;
 }
 
-#btn-cta {
-  position: absolute;
-  right: 45vw;
-}
-
 .zenrock {
   position: absolute;
   height: 35vh;
@@ -178,18 +173,21 @@ section .button:hover::before {
 
 .form-login {
   margin: 0;
+  padding: 0 10vw;
   height: 100%;
   width: 100%;
 }
 
 .form-input {
   height: 100vh;
+  width: 100%;
+  margin-top: 10vh;
 }
 
 .name-section {
   overflow: hidden;
   position: relative;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 .name-section input {
@@ -250,7 +248,14 @@ section .button:hover::before {
 
 #btn-cta {
   position: absolute;
-  right: 45vw;
+  right: 56vw;
+  bottom: 30vh;
+}
+
+#btn-signup {
+  position: absolute;
+  right: 30vw;
+  bottom: 30vh;
 }
 
 * {
