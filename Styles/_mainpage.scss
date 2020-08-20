@@ -1,0 +1,32 @@
+#landing-body {
+  height: 350vh;
+  overflow-x: hidden;
+}
+.category {
+  display: flex;
+  margin-top: 10vh;
+  img {
+    margin-left: 2vw;
+  }
+}
+.cards-wrapper {
+  margin-top: 5vh;
+  height: 50vh;
+  width: 150vw;
+  @include flex;
+}
+.card {
+  height: 40vh;
+  width: 20vw;
+  background: red;
+  margin-right: 5vw;
+}
+.dots {
+  @include flex;
+  width: 5vw;
+  margin: auto;
+  margin-top: 5vh;
+  img {
+    height: 2vh;
+  }
+}

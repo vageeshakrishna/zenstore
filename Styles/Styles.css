@@ -345,6 +345,61 @@ section .button:hover::before {
           transform: translate(50%);
 }
 
+#landing-body {
+  height: 350vh;
+  overflow-x: hidden;
+}
+
+.category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10vh;
+}
+
+.category img {
+  margin-left: 2vw;
+}
+
+.cards-wrapper {
+  margin-top: 5vh;
+  height: 50vh;
+  width: 150vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card {
+  height: 40vh;
+  width: 20vw;
+  background: red;
+  margin-right: 5vw;
+}
+
+.dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 5vw;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.dots img {
+  height: 2vh;
+}
+
 * {
   margin: 0;
   padding: 0;
