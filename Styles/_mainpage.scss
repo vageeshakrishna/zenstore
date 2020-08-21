@@ -1,5 +1,4 @@
 #landing-body {
-  height: 350vh;
   overflow-x: hidden;
 }
 .category {
@@ -11,15 +10,17 @@
 }
 .cards-wrapper {
   margin-top: 5vh;
-  height: 50vh;
-  width: 150vw;
-  @include flex;
+  width: 80vw;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .card {
-  height: 40vh;
-  width: 20vw;
+  height: 100%;
+  width: 100%;
   background: red;
-  margin-right: 5vw;
+  margin-right: 10vw;
+  border: 5px solid white;
 }
 .dots {
   @include flex;
@@ -29,4 +30,8 @@
   img {
     height: 2vh;
   }
+}
+.footer {
+  height: 10vh;
+  background-color: #e5e5e5;
 }
