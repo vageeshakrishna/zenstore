@@ -13,14 +13,32 @@
   width: 80vw;
   height: 60vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.card {
-  height: 100%;
-  width: 100%;
-  background: red;
-  margin-right: 10vw;
-  border: 5px solid white;
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  grid-gap: 0.1rem;
+  .card {
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    background: red;
+    margin-right: 10vw;
+    transition: 0.4s ease-out;
+    &:hover {
+      transform: scale(1.1);
+      overflow: hidden;
+    }
+    &:hover ~ p {
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+  p {
+    transition: 0.4s ease;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+  }
 }
 .dots {
   @include flex;
@@ -34,4 +52,15 @@
 .footer {
   height: 10vh;
   background-color: #e5e5e5;
+}
+[data-scroll] {
+  transition: all 0.4s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+  z-index: 1;
+}
+[data-scroll="out"] {
+  z-index: -1;
+  opacity: 0;
 }
